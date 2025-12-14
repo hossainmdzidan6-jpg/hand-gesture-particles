@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hand-Controlled Three.js Particles</title>
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #000; }
+        #overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 100; pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <video id="video" style="display: none;"></video>
+    <canvas id="overlay"></canvas>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/hands.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3.1646424915/camera_utils.js" crossorigin="anonymous"></script>
+    
+    <script src="shaders.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
